@@ -1,0 +1,115 @@
+﻿<!--ghi zayda-->
+@{
+    ViewBag.Title = "Encadrant";
+    Layout = "~/Views/Shared/_MonLayout.cshtml";
+}
+<link href="~/Content/css/Style2.css" rel="stylesheet" />
+<script src="~/Content/fontawesome-free-5.13.0-web/js/all.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<section id="hero">
+    <div class="hero-container">
+
+       
+            <table class="table table-striped" style="font-size:15px">
+                <thead class="thead-dark">
+                    <tr>
+                        
+
+
+                        <th scope="col">Description</th>
+                        <th scope="col">Date de disposition</th>
+                        <th scope="col">fichier pdf</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+
+
+                        string str = "Get?path=C:/Users/PC/Desktop/stage/Projet_Archivage/Projet1_ASP/Projet1_ASP/pdf/Rapport.pdf";
+
+
+
+
+                        <tr>
+                            <th>
+                                Presentation du ctth
+                            </th>
+                            <th>
+                                02/02/2020
+                            </th>
+                            <th>
+
+
+
+
+
+                                <button type="button" class="btn btn-success">
+                                    <a href=@str title="Ouvrir fichier PDF" style="font-size:10px;color:white">Voir</a>
+                                </button>
+
+
+
+                            </th>
+                        </tr>
+                        string str2 = "Get?path=C:/Users/PC/Desktop/stage/Projet_Archivage/Projet1_ASP/Projet1_ASP/pdf/A.pdf";
+
+
+
+
+                        <tr>
+                            <th>
+                                Attestation
+                            </th>
+                            <th>
+                                02/02/2020
+                            </th>
+                            <th>
+
+
+
+
+
+                                <button type="button" class="btn btn-success">
+                                    <a href=@str2 title="Ouvrir fichier PDF" style="font-size:10px;color:white">Voir</a>
+                                </button>
+
+
+
+                            </th>
+                        </tr>
+                        string str3 = "Get?path=C:/Users/PC/Desktop/stage/Projet_Archivage/Projet1_ASP/Projet1_ASP/pdf/Z.pdf";
+
+
+
+
+                        <tr>
+                            <th>
+                               Bulletin 
+                            </th>
+                            <th>
+                                02/02/2020
+                            </th>
+                            <th>
+
+
+
+
+
+                                <button type="button" class="btn btn-success">
+                                    <a href=@str3 title="Ouvrir fichier PDF" style="font-size:10px;color:white">Voir</a>
+                                </button>
+
+
+
+                            </th>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    
+</section>
