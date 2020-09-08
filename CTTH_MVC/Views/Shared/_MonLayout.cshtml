@@ -42,8 +42,10 @@
         <section id="topbar" class="d-none d-lg-block">
             <div class="container clearfix">
                 <div class="contact-info float-left">
-                    <i class="icofont-envelope"></i><a href="mailto:rachhboune@ctth.ma">rachhboune@ctth.ma</a>
-                    <i class="icofont-phone">+212 522 97 56 93</i>
+                    <i class="icofont-envelope"></i><a href="mailto:contact@ctth.ma">contact@ctth.ma</a>
+                    <i class="icofont-phone">+212 522 975 693</i>
+                    <i class="icofont-phone">+212 522 973 995</i>
+                    <i class="icofont-envelope">Fax :+212 522 973 471</i>
                 </div>
                 <div class="social-links float-right">
                     <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -73,13 +75,12 @@
                             
                             
                             <li class="drop-down">
-                                <a href="~/#about">Qui sommes nous ? </a>
+                                <a>Qui sommes nous ? </a>
                                 <ul>
-                                    <li><a href="~/Home/Presentation">Présentation </a></li>
-                                    <li><a href="~/Home/Mot">Mot du Président </a></li>
+                                    
+                                    <li><a href="~/#about">A propos de nous </a></li>
+                                    <li><a href="~/Home/Pourquoi_CTTH">Pourquoi CTTH ?</a></li>
                                     <li><a href="http://rectim.ma/">Rectim </a></li>
-                                   
-                                    <li><a href="~/Home/Accreditations">Accreditations</a></li>
 
                                 </ul>
                             </li>
@@ -88,6 +89,28 @@
                                     <a href="~/#portfolio">Offre de services  </a>
 
                                     <ul id="portfolio-flters">
+
+                                        <li class="drop-down">
+
+                                            <a href="~/#portfolio">conseils et accompagnement </a>
+                                            <ul>
+                                                <li> <a href="~/#portfolio">test1 </a></li>
+                                                <li><a href="~/#portfolio">test2 </a></li>
+                                                <li><a href="~/#portfolio">test3 </a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="drop-down">
+
+                                            <a href="~/#portfolio">laboratoire  d'analyse chimique  </a>
+                                            <ul>
+                                                <li> <a href="~/#portfolio">test1 </a></li>
+                                                <li><a href="~/#portfolio">test2 </a></li>
+                                                <li><a href="~/#portfolio">test3 </a></li>
+                                            </ul>
+
+                                        </li>
+
                                         <a href="~/#portfolio">
                                             <li data-filter=".filter-elaboration">
                                                 Elaboration de plans de formations
@@ -116,7 +139,7 @@
 
                                             </li>
                                         </a>
-                                       
+
 
 
                                     </ul>
@@ -128,7 +151,7 @@
                             <li>
                                 <!--  ~/#portfolio -->
                                
-                                @Html.ActionLink("Espace Télechargement", "Espace_telechargement", "Home")
+                                @Html.ActionLink("Communication et téléchargement ", "Espace_telechargement", "Home")
 
 
                             </li>
@@ -155,10 +178,11 @@
 
                             <h3>CTTH</h3>
                             <p>
-                                Sidi maarouf <br>
+                                Complexe des centres techniques Route BO Sidi maarouf <br>
                                 CASABLANCA, Morocco<br><br>
                                 <strong>Telephone:</strong> +212 522 97 56 93<br>
-                                <strong>Email:</strong>rachahboune@ctth.ma<br>
+                                +212 522 97 39 95<br>
+                                <strong>Email:</strong>contact@ctth.ma<br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -186,7 +210,7 @@
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i>  
                                 <a href="~/#portfolio">
-                                <li data-filter=".filter-elaboration">TEXTILE</li>
+                                <i data-filter=".filter-elaboration"  class="bx bx-chevron-right">TEXTILE</i>
                                 </a>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Service 2</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Service 3</a></li>
@@ -195,14 +219,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 footer-newsletter">
-                            <h4>nos informations </h4>
-                            <p></p>
-                            <form action="" method="post">
-                                <input type="email" name="email"><input type="submit" value="Subscribe">
-                            </form>
-
-                        </div>
+                        
 
                     </div>
                 </div>
