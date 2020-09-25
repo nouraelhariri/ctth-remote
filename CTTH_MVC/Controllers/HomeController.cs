@@ -30,31 +30,12 @@ namespace Projet1_ASP.Controllers
     {
         List<FileResult> files ;
        string fichier;
-
+        Attachment d;
 
         public ActionResult Index()
         {
-            /*
-            MailMessage email = new MailMessage();
-            // Expéditeur
-            email.From = new MailAddress("karima.elhariri@gmail.com");
-            // Destinataire
-            email.To.Add(new MailAddress("nouraelhariri09@gmail.com"));
-            // Destinataire en copie
-            email.CC.Add(new MailAddress("nouraelhariri09@gmail.com"));
-            // Destinataire en copie cache
-            email.Bcc.Add(new MailAddress("nouraelhariri09@gmail.com"));
-            // Sujet de l'email
-            email.Subject = "Email de démonstration";
-            // Corps de l'email en texte
-            email.Body = "Contenu de l'email au format texte";
-            SmtpClient smtp = new SmtpClient();
-            smtp.Credentials = new System.Net.NetworkCredential("karima.elhariri@gmail.com", "famille123");
-           // smtp.UseDefaultCredentials = false;
-           // smtp.Port = 465;
-            smtp.Host = "smtp.gmail.com";
-            smtp.EnableSsl = true;
-            smtp.Send(email);*/
+            
+           
             return View();
         }
 
@@ -66,19 +47,35 @@ namespace Projet1_ASP.Controllers
 
            
             String ser = Server.MapPath("");
-            String fileName = file.FileName;
 
-            // Append the name of the file to upload to the path.
-            ser += "\\"+fileName;
-            file.SaveAs(ser);
-            
-           fichier = ser;            User_mail a = new User_mail(Request.Form["m"], Request.Form["p"],Request.Form["subject"],Request.Form["message"]);
 
-            SMTP(a.email, "nouraelhariri09@gmail.com",a.password,  a.message,a.subject);
+            if (file== null)
+            {
+                User_mail a = new User_mail(Request.Form["m"], Request.Form["p"], Request.Form["subject"], Request.Form["message"]);
 
-            //file suppression
- //System.IO.File.Delete(fichier);
+                SMTPmail(a.email, "contact@ctth.ma", a.password, a.message, a.subject);
 
+            }
+            else
+            {
+                String fileName = file.FileName;
+                // Append the name of the file to upload to the path.
+                ser += "\\" + fileName;
+                //  file.SaveAs(ser);
+                FileStream fs = new FileStream(ser, FileMode.Create);
+                fs.Dispose();
+                fs.Close();
+                fichier = ser;
+                User_mail a = new User_mail(Request.Form["m"], Request.Form["p"], Request.Form["subject"], Request.Form["message"]);
+
+                SMTP(a.email, "contact@ctth.ma", a.password, a.message, a.subject);
+
+
+                d.Dispose();
+                FileInfo myfileinf = new FileInfo(ser);
+                myfileinf.Delete();
+
+            }
             return View("About");
         }
 
@@ -97,7 +94,7 @@ namespace Projet1_ASP.Controllers
             string pdfFilePath = Server.MapPath("..") +"/963852.pdf";
             byte[] bytes = System.IO.File.ReadAllBytes(pdfFilePath);
 
-            files.Add(GetReport());
+    
 
 
 
@@ -105,12 +102,7 @@ namespace Projet1_ASP.Controllers
         }
 
 
-        public FileResult GetReport()
-        {
-            string ReportURL = "C:/Users/DELL/Desktop/git_ctth/ctth-remote/CTTH_MVC/963852.pdf";
-            byte[] FileBytes = System.IO.File.ReadAllBytes(ReportURL);
-            return File(FileBytes, "application/pdf");
-        }
+   
         public ActionResult Get(string path)
         {
 
@@ -192,13 +184,40 @@ namespace Projet1_ASP.Controllers
             // smtp.Port = 465;
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
-           attachement(email, fichier);
+         d=  attachement(email, fichier);
             
           
             smtp.Send(email);
           
         }
-      public Attachment attachement(MailMessage email ,string fichier )
+        private void SMTPmail(String from, String to, String password, String message, String subject)
+        {
+            MailMessage email = new MailMessage();
+            // Expéditeur
+            email.From = new MailAddress(from);
+            // Destinataire
+            email.To.Add(new MailAddress(to));
+            // Destinataire en copie
+            email.CC.Add(new MailAddress(to));
+            // Destinataire en copie cache
+            email.Bcc.Add(new MailAddress(to));
+            // Sujet de l'email
+            email.Subject = subject;
+            // Corps de l'email en texte
+            email.Body = message;
+
+            SmtpClient smtp = new SmtpClient();
+            smtp.Credentials = new System.Net.NetworkCredential(from, password);
+            // smtp.UseDefaultCredentials = false;
+            // smtp.Port = 465;
+            smtp.Host = "smtp.gmail.com";
+            smtp.EnableSsl = true;
+           
+
+            smtp.Send(email);
+
+        }
+        public Attachment attachement(MailMessage email ,string fichier )
         {
             Attachment data = new Attachment(fichier, MediaTypeNames.Application.Octet);
 

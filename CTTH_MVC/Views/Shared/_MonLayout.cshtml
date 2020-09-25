@@ -1,261 +1,305 @@
 ﻿
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>@ViewBag.Title</title>
-        <meta content="" name="descriptison">
-        <meta content="" name="keywords">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <title>@ViewBag.Title</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 
-        <!-- Favicons -->
-        <link href="~/Content/img/favicon.png" rel="icon">
-        <link href="~/Content/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="~/Content/img/favicon.png" rel="icon">
+    <link href="~/Content/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 
-        <!-- Vendor CSS Files -->
-        <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="~/Content/vendor/icofont/icofont.min.css" rel="stylesheet">
-        <link href="~/Content/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-        <link href="~/Content/vendor/animate.css/animate.min.css" rel="stylesheet">
-        <link href="~/Content/vendor/venobox/venobox.css" rel="stylesheet">
-        <link href="~/Content/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="~/Content/vendor/aos/aos.css" rel="stylesheet">
 
-        <!-- Template Main CSS File -->
-        <link href="~/Content/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="~/Content/css/style.css" rel="stylesheet">
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!-- ======= Top Bar ======= -->
-        <section id="topbar" class="d-none d-lg-block">
-            <div class="container clearfix">
-                <div class="contact-info float-left">
-                    <i class="icofont-envelope"></i><a href="mailto:contact@ctth.ma">contact@ctth.ma</a>
-                    <i class="icofont-phone">+212 522 975 693</i>
-                    <i class="icofont-phone">+212 522 973 995</i>
-                    <i class="icofont-envelope">Fax :+212 522 973 471</i>
-                </div>
-                <div class="social-links float-right">
-                    <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-                    <a href="#" class="skype"><i class="icofont-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-                </div>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="container clearfix">
+            <div class="contact-info float-left">
+                <i class="icofont-envelope"></i><a href="mailto:contact@ctth.ma">contact@ctth.ma</a>
+                <i class="icofont-phone">+212 522 975 693</i>
+                <i class="icofont-phone">+212 522 973 995</i>
+                <i class="icofont-envelope">Fax :+212 522 973 471</i>
             </div>
-        </section>
+            <div class="social-links float-right">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="skype"><i class="icofont-skype"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
 
-        <!-- ======= Header ======= -->
-        <header id="header">
-            <div class="container">
+    <!-- ======= Header ======= -->
+    <header id="header" style="height:120px">
+        <div class="container">
 
-                <div class="logo float-left">
+            <div class="logo float-left">
 
-                    <img src=' ~/Content/img/slide/favicon.png'  />
-                    <!-- Uncomment below if you prefer to use an image logo -->
-                    <!-- <a href="index.html"><img src="Content/img/logo.png" alt="" class="img-fluid"></a>-->
-                </div>
+                <img src=' ~/Content/img/slide/favicon.png' />
 
-                    <nav class="nav-menu float-right d-none d-lg-block">
+                <span style="color:aquamarine"> Centre Technique  </span><span style="color:darkgray ;"> Du Textile et Habillement    </span>
+                <span style="margin-left:350px;">
+                    <span style="        color: aquamarine;
+        font-size: large;
+">       مركز التقني       </span><span style="        color: darkgray;
+        font-size: large;
+">  للنسيج والألبسة     </span>
+                </span>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="Content/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav class="nav-menu float-right d-none d-lg-block">
+                <ul>
+                    <li><a href="~/#header">Acceuil</a></li>
+
+
+
+                    <li class="drop-down">
+                        <a>Qui sommes nous ? </a>
                         <ul>
-                            <li><a href="~/#header">Acceuil</a></li>
-                            
-                            
-                            
-                            <li class="drop-down">
-                                <a>Qui sommes nous ? </a>
-                                <ul>
-                                    
-                                    <li><a href="~/#about">A propos de nous </a></li>
-                                    <li><a href="~/Home/Pourquoi_CTTH">Pourquoi CTTH ?</a></li>
-                                    <li><a href="http://rectim.ma/">Rectim </a></li>
 
-                                </ul>
-                            </li>
-                            <li class="drop-down">
-                                
-                                    <a href="~/#portfolio">Offre de services  </a>
+                            <li><a href="~/#about">A propos de nous </a></li>
+                            <li><a href="~/Home/Pourquoi_CTTH">Pourquoi CTTH ?</a></li>
+                            <li><a href="http://rectim.ma/">Rectim </a></li>
 
-                                    <ul id="portfolio-flters">
-
-                                        <li class="drop-down">
-
-                                            <a href="~/#portfolio">conseils et accompagnement </a>
-                                            <ul>
-                                                <li> <a href="~/#portfolio">test1 </a></li>
-                                                <li><a href="~/#portfolio">test2 </a></li>
-                                                <li><a href="~/#portfolio">test3 </a></li>
-                                            </ul>
-
-                                        </li>
-                                        <li class="drop-down">
-
-                                            <a href="~/#portfolio">laboratoire  d'analyse chimique  </a>
-                                            <ul>
-                                                <li> <a href="~/#portfolio">test1 </a></li>
-                                                <li><a href="~/#portfolio">test2 </a></li>
-                                                <li><a href="~/#portfolio">test3 </a></li>
-                                            </ul>
-
-                                        </li>
-
-                                        <a href="~/#portfolio">
-                                            <li data-filter=".filter-elaboration">
-                                                Elaboration de plans de formations
-                                            </li>
-                                        </a>
-
-
-
-                                        <a href="~/#portfolio">
-                                            <li data-filter=".filter-Formations">
-                                                Formations / séminaires
-                                            </li>
-                                        </a>
-                                        <a href="~/#portfolio">
-                                            <li data-filter=".filter-realisation">Réalisation d’audit ou diagnostics techniques</li>
-                                        </a>
-                                        <a href="~/#portfolio">
-                                            <li data-filter=".filter-Assistance">
-                                                Assistance technique
-
-                                            </li>
-                                        </a>
-                                        <a href="~/#portfolio">
-                                            <li data-filter=".filter-dev">
-                                                Recherche et développement
-
-                                            </li>
-                                        </a>
-
-
-
-                                    </ul>
-                               
-                            </li>
-
-
-
-                            <li>
-                                <!--  ~/#portfolio -->
-                               
-                                @Html.ActionLink("Communication et téléchargement ", "Espace_telechargement", "Home")
-
-
-                            </li>
-
-
-
-
-
-                            <li><a href="~/#contact">Contact </a></li>
                         </ul>
-                    </nav><!-- .nav-menu -->
-                </div>
-        </header>
+                    </li>
+                    <li class="drop-down">
 
-        <!-- End Header -->
-        @RenderBody()
-        <!-- ======= Footer ======= -->
-        <footer id="footer">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
+                        <a href="~/#portfolio">Offre de services  </a>
 
-                        <div class="col-lg-3 col-md-6 footer-info">
+                        <ul id="portfolio-flters">
 
-                            <h3>CTTH</h3>
-                            <p>
-                                Complexe des centres techniques Route BO Sidi maarouf <br>
-                                CASABLANCA, Morocco<br><br>
-                                <strong>Telephone:</strong> +212 522 97 56 93<br>
-                                +212 522 97 39 95<br>
-                                <strong>Email:</strong>contact@ctth.ma<br>
-                            </p>
-                            <div class="social-links mt-3">
-                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                            </div>
-                        </div>
+                           
+                           
+                            <li data-filter=".filter-labo">
+                                laboratoires
+                          
 
-                        <div class="col-lg-2 col-md-6 footer-links">
-                            <h4>liens importants </h4>
-                            <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Acceuil</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">A propos de Nous </a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                                
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Confidentialité</a></li>
-                            </ul>
-                        </div>
+                    </li>
 
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Nos Services</h4>
+                    <a href="~/#portfolio">
+                        <li data-filter=".filter-elaboration">
+                            Elaboration de plans de formations
+                        </li>
+                    </a>
 
-                            <ul>
-                                <li><i class="bx bx-chevron-right"></i>  
-                                <a href="~/#portfolio">
-                                <i data-filter=".filter-elaboration"  class="bx bx-chevron-right">TEXTILE</i>
-                                </a>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Service 2</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Service 3</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Service 4</a></li>
 
-                            </ul>
-                        </div>
 
-                        
+                    <a href="~/#portfolio">
+                        <li data-filter=".filter-Formations">
+                            Formations / séminaires
+                        </li>
+                    </a>
+                    <a href="~/#portfolio">
+                        <li data-filter=".filter-realisation">Réalisation d’audit ou diagnostics techniques</li>
+                    </a>
+                    <a href="~/#portfolio">
+                        <li data-filter=".filter-Assistance">
+                            Assistance technique
 
-                    </div>
-                </div>
-            </div>
+                        </li>
+                    </a>
+                    <a href="~/#portfolio">
+                        <li data-filter=".filter-dev">
+                            Recherche et développement
 
+                        </li>
+                    </a>
+
+
+
+                </ul>
+
+                </li>
+
+
+
+                <li>
+                    <!--  ~/#portfolio -->
+
+                    @Html.ActionLink("Communication et téléchargement ", "Espace_telechargement", "Home")
+
+
+                </li>
+
+
+
+
+
+                <li><a href="~/#contact">Contact </a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header>
+
+    <!-- End Header -->
+    @RenderBody()
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
             <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>CTTH</span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    <!-- All the links in the footer should remain intact. -->
-                    <!-- You can delete the links only if you purchased the pro version. -->
-                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+
+                        <h3>CTTH</h3>
+                        <p>
+                            Complexe des centres techniques Route BO Sidi maarouf <br>
+                            CASABLANCA, Morocco<br><br>
+                            <strong>Telephone:</strong> <br>+212 522 97 56 93<br>
+                            +212 522 97 39 95<br>
+                            <strong>Email:</strong>contact@ctth.ma<br>
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>liens importants </h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Acceuil</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#about">A propos de Nous </a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Services</a></li>
+
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Confidentialité</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Nos Services</h4>
+
+
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active"><i class="bx bx-chevron-right"></i><a href="#portfolio">Tous les Services</a> </li>
+                            <li data-filter=".filter-labo"><i class="bx bx-chevron-right"></i><a href="#portfolio"> laboratoires</a></li>
+
+
+                            <li data-filter=".filter-elaboration">
+                                <i class="bx bx-chevron-right"></i><a href="#portfolio">
+                                    Elaboration de plans de formations
+                                </a>
+                            </li>
+                            <li data-filter=".filter-Formations">
+                                <i class="bx bx-chevron-right"></i><a href="#portfolio">
+                                    Formations / séminaires
+                                </a>
+                            </li>
+                            <li data-filter=".filter-realisation">
+                                <i class="bx bx-chevron-right"></i><a href="#portfolio">
+                                    Réalisation d’audit ou diagnostics techniques
+                                </a>
+                            </li>
+                            <li data-filter=".filter-Assistance">
+                                <i class="bx bx-chevron-right"></i><a href="#portfolio">
+                                    Assistance technique
+                                </a>
+                            </li>
+                            <li data-filter=".filter-dev">
+                                <i class="bx bx-chevron-right"></i><a href="#portfolio">
+                                    Recherche et développement
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div id="map" style="height:300px;width:30%; float:left;">
+                        <!-- Ici s'affichera la carte -->
+                    </div>
+
+
+                </div> 
             </div>
-        </footer><!-- End Footer -->
+        </div>
+       
 
-        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>CTTH</span></strong>.
+            </div>
+            <div class="credits">
 
-        <!-- Vendor JS Files -->
-        <script src="~/Content/vendor/jquery/jquery.min.js"></script>
-        <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="~/Content/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="~/Content/vendor/php-email-form/validate.js"></script>
-        <script src="~/Content/vendor/jquery-sticky/jquery.sticky.js"></script>
-        <script src="~/Content/vendor/venobox/venobox.min.js"></script>
-        <script src="~/Content/vendor/waypoints/jquery.waypoints.min.js"></script>
-        <script src="~/Content/vendor/counterup/counterup.min.js"></script>
-        <script src="~/Content/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="~/Content/vendor/aos/aos.js"></script>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
 
-        <!-- Template Main JS File -->
-        <script src="~/Content/js/main.js"></script>
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-    </body>
+    <!-- Vendor JS Files -->
+    <script src="~/Content/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/Content/vendor/php-email-form/validate.js"></script>
+    <script src="~/Content/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="~/Content/vendor/venobox/venobox.min.js"></script>
+    <script src="~/Content/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/Content/vendor/counterup/counterup.min.js"></script>
+    <script src="~/Content/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/Content/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/Content/js/main.js"></script>
+
+</body>
 
 </html>
+<!-- Fichiers Javascript -->
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+<script type="text/javascript">
+    // On initialise la latitude et la longitude de Paris (centre de la carte)
+    var lat = 33.523039;
+    var lon = -7.646977;
+    var macarte = null;
+    // Fonction d'initialisation de la carte
+    function initMap() {
+        // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+        macarte = L.map('map').setView([lat, lon], 16);
+        // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            // Il est toujours bien de laisser le lien vers la source des données
+            attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+            minZoom: 1,
+            maxZoom: 20
+        }).addTo(macarte); var marker = L.marker([lat, lon]).addTo(macarte);
+    }
+    window.onload = function () {
+        // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+        initMap();
+    };
+</script>
+

@@ -1,13 +1,4 @@
-/**
-* Template Name: Mamba - v2.0.1
-* Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
@@ -353,6 +344,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   overflow: hidden;
 }
 
+#hero2 {
+  width: 100%;
+  height: calc(100vh - 114px);
+  padding: 0;
+  overflow: hidden;
+}
+
 #hero .carousel-item {
   width: 100%;
   height: calc(100vh - 114px);
@@ -361,6 +359,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
+
 
 #hero .carousel-item::before {
   content: '';
@@ -375,6 +375,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   overflow: hidden;
 }
 
+
 #hero .carousel-container {
   display: flex;
   justify-content: center;
@@ -387,9 +388,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   overflow: hidden;
 }
 
+
 #hero .carousel-content {
   text-align: left;
 }
+
 
 @media (max-width: 992px) {
   #hero, #hero .carousel-item {
@@ -400,12 +403,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   }
 }
 
+
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 900;
 }
+
 
 #hero p {
   width: 80%;
@@ -414,10 +419,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #fff;
 }
 
+
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
   background-position: center top;
 }
+
 
 #hero .carousel-inner .carousel-item,
 #hero .carousel-inner .active.carousel-item-left,
@@ -425,12 +432,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   opacity: 0;
 }
 
+
 #hero .carousel-inner .active,
 #hero .carousel-inner .carousel-item-next.carousel-item-left,
 #hero .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
   transition: 0.5s;
 }
+
 
 #hero .carousel-inner .carousel-item-next,
 #hero .carousel-inner .carousel-item-prev,
@@ -440,9 +449,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transform: translate3d(0, 0, 0);
 }
 
+
 #hero .carousel-control-prev, #hero .carousel-control-next {
   width: 10%;
 }
+
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
   background: none;
@@ -452,9 +463,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   height: auto;
 }
 
+
 #hero .carousel-indicators li {
   cursor: pointer;
 }
+
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
@@ -477,6 +490,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero .btn-get-started:hover {
   background: #1c5c93;
 }
+
 
 @media (max-width: 768px) {
   #hero h2 {

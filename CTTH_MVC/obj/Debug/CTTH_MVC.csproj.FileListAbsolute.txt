@@ -159,8 +159,8 @@ C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\bin\fr\System.Web.Razor.reso
 C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\bin\fr\System.Web.WebPages.resources.dll
 C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\bin\fr\System.Web.WebPages.Deployment.resources.dll
 C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\bin\fr\System.Web.WebPages.Razor.resources.dll
-C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\obj\Debug\CTTH_MVC.csprojAssemblyReference.cache
 C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\obj\Debug\CTTH_MVC.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\obj\Debug\CTTH_MVC.csproj.CopyComplete
 C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\obj\Debug\CTTH_MVC.dll
 C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\obj\Debug\CTTH_MVC.pdb
+C:\Users\DELL\Desktop\git_ctth\ctth-remote\CTTH_MVC\obj\Debug\CTTH_MVC.csprojAssemblyReference.cache
