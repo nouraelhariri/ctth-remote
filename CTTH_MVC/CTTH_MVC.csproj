@@ -164,9 +164,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Pourquoi_CTTH.cshtml" />
     <Content Include="Views\Home\Espace_telechargement.cshtml" />
     <Content Include="Views\Shared\_MonLayout.cshtml" />
+    <Content Include="Views\Shared\partial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
